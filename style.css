@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    margin: 40px 120px;
+    margin: 40px 80px;
     max-height: fit-content;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -30,7 +30,7 @@ h2 {
 .card {
     border-radius: 8px;
     box-shadow: 5px 5px 8px 2px hsla(217, 19%, 35%, 0.2);
-    padding: 15px;
+    padding: 20px;
 }
 
 #daniel {
@@ -160,7 +160,18 @@ h2 {
     font-weight: 500, 600;
 }
 
+@media all and (max-width: 1150px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 25px;
+    }
 
+    .card {
+        max-width: 400px;
+    }
+}
 /*
 The designs were created to the following widths:
 
