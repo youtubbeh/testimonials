@@ -5,10 +5,98 @@ html {
     box-sizing: inherit;
   }
 
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
 
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px 2px hsla(217, 19%, 35%, 0.2);
+}
+
+.purple {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+}
+
+.white {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.blue {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.gray {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.purple h2, .blue h2, .gray h2 {
+    color: white;
+}
+
+.white h2 {
+    color:hsl(219, 29%, 14%);
+}
+
+.description {
+    font-size: 13px;
+}
+
+.purple .name, .gray .name, .blue .name, .purple .description, .gray .description, .blue .description {
+    color:rgba(255, 255, 255, 0.7);
+}
+
+.white .name, .white .description {
+    color:hsla(219, 29%, 14%, 0.7);
+}
+
+.purple .verified, .gray .verified, .blue .verified {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.white .verified {
+    color:hsla(219, 29%, 14%, 0.5);
+}
+
+.propic {
+    border-radius: 50%;
+    border: 3px solid;
+    width: 40px;
+}
+
+.purple .propic {
+    border-color: #A775F3;
+}
+
+.blue .propic {
+    border-color: hsl(263, 55%, 52%);
+}
+
+.gray .propic {
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.white .propic {
+    border-color: hsl(210, 46%, 95%);
+}
+
+.name {
+    font-size: 13px;
+}
+
+.verified {
+    font-size: 11px;
+}
 
 .attribution {
     font-size: 11px; text-align: center;
+    color: hsl(217, 19%, 35%);
     position: absolute;
     top: 5px;
     left: 50%;
@@ -16,7 +104,7 @@ html {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(217, 19%, 35%);
 }
 
 .guide {
