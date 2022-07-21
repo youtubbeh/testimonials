@@ -11,17 +11,24 @@ html {
 
 body {
     background-color: hsl(210, 46%, 95%);
+    margin: 0 auto;
+}
+
+main {
+    margin: 100px;
 }
 
 .card {
     border-radius: 8px;
     box-shadow: 5px 5px 8px 2px hsla(217, 19%, 35%, 0.2);
+    padding: 20px;
 }
 
 .purple {
     background-color: hsl(263, 55%, 52%);
     background-image: url(./images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
+    background-position: right 20% top 0;
 }
 
 .white {
