@@ -15,12 +15,21 @@ body {
 }
 
 main {
-    margin: 40px 80px;
+    margin: 50px 80px 40px 80px;
     max-height: fit-content;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1em;
     grid-auto-rows: minmax(200px, auto);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profiletext {
+    margin-left: 12px;
 }
 
 h2 {
@@ -30,7 +39,7 @@ h2 {
 .card {
     border-radius: 8px;
     box-shadow: 5px 5px 8px 2px hsla(217, 19%, 35%, 0.2);
-    padding: 20px;
+    padding: 25px;
 }
 
 #daniel {
@@ -77,6 +86,11 @@ h2 {
     background-color: hsl(217, 19%, 35%);
 }
 
+.name, .verified {
+    margin: 0;
+    padding: 0;
+}
+
 .purple h2, .blue h2, .gray h2 {
     color: white;
 }
@@ -87,6 +101,7 @@ h2 {
 
 .description {
     font-size: 13px;
+    line-height: 1.5em;
 }
 
 .purple .name, .gray .name, .blue .name, .purple .description, .gray .description, .blue .description {
@@ -109,6 +124,7 @@ h2 {
     border-radius: 50%;
     border: 3px solid;
     width: 40px;
+    height: 40px;
 }
 
 .purple .propic {
@@ -142,22 +158,11 @@ h2 {
     top: 5px;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
 }
 
 .attribution a {
     color: hsl(217, 19%, 35%);
-}
-
-.guide {
-    color: hsl(263, 55%, 52%);
-    color: hsl(217, 19%, 35%);
-    color: hsl(219, 29%, 14%);
-    color: hsl(0, 0%, 100%); /* white */
-    color: hsl(0, 0%, 81%); /* light gray */
-    color:hsl(210, 46%, 95%); /* light grayish blue */
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 13px; /* body copy */
-    font-weight: 500, 600;
 }
 
 @media all and (max-width: 1150px) {
