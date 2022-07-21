@@ -15,13 +15,47 @@ body {
 }
 
 main {
-    margin: 100px;
+    margin: 40px 120px;
+    max-height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    grid-auto-rows: minmax(200px, auto);
+}
+
+h2 {
+    font-size: 18px;
 }
 
 .card {
     border-radius: 8px;
     box-shadow: 5px 5px 8px 2px hsla(217, 19%, 35%, 0.2);
-    padding: 20px;
+    padding: 15px;
+}
+
+#daniel {
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+#jonathan {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#kira {
+    grid-column: 4;
+    grid-row: 1/3;
+}
+
+#jeanette {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#patrick {
+    grid-column: 2/4;
+    grid-row: 2;
 }
 
 .purple {
@@ -125,6 +159,7 @@ main {
     font-size: 13px; /* body copy */
     font-weight: 500, 600;
 }
+
 
 /*
 The designs were created to the following widths:
